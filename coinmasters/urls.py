@@ -22,7 +22,12 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.function,name='function')
+    path('',views.function,name='function'),
+    path('click-action/<id>/',views.click,name='click')
+    
+ 
+
+
     
 ]
 if settings.DEBUG:
