@@ -23,7 +23,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.function,name='function'),
-    path('click-action/<id>/',views.click,name='click')
+    path('click/<id>/',views.click,name='click')
     
  
 
